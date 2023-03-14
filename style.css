@@ -1,0 +1,158 @@
+@import url(./fonts.css);
+.page {
+  background-image: url(./IMG_3030.PNG);
+  background-size: contain;
+  height: 50px;
+  margin: 0;
+  font-family: 'inter';
+}
+
+.page__container {
+  width: 80vw;
+  min-height: 100vh;
+  background-color: wheat;
+  margin: 0 auto;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 4vw;
+  background-color: white;
+  margin: 0 auto;
+  z-index: 5;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about {
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.about__title {
+  font-family: 'ClimateCrisis-Regular', Arial, sans-serif;
+  font-style: normal;
+  font-size: 10vw;
+  position: absolute;
+  z-index: 3;
+  opacity: 0.5;
+  margin: 0;
+  margin-top: 20vw;
+}
+
+.about__main {
+  position: absolute;
+  display: flex;
+  width: 70%;
+  height: 20vw;
+  justify-content: space-between;
+}
+
+.block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.link {
+  font-family: 'inter';
+  padding: 0;
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
+@media screen and (max-width: 770px) {
+  .link {
+    font-size: 3vw;
+  }
+}
+
+.photo {
+  width: 25vw;
+}
+
+.about__photo {
+  --borderWidth: 6px;
+  position: relative;
+  border-radius: var(--borderWidth);
+  z-index: 2;
+}
+.about__photo:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(45deg, #fdf14d, #9e62e7);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bio-container {
+  width: 90%;
+  margin: 50px auto 0;
+}
+
+.section__title {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+.section__description {
+  max-width: 50vw;
+}
+@media screen and (max-width: 700px) {
+  .section__description {
+    min-width: 70vw;
+  }
+}
+.family {
+  padding-bottom: 20px;
+}
+
+.photo__grid {
+  padding-top: 5vw;
+  padding-bottom: 1vw;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+  width: 90%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.photo__item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 861px) {
+  .photo__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+@media screen and (max-width: 565px) {
+  .photo__grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+  }
+}

@@ -1,0 +1,27 @@
+@font-face {
+  font-family: 'ClimateCrisis-Regular';
+  font-style: normal;
+  font-display: swap;
+  src: url(./fonts/ClimateCrisis-Regular-VariableFont_YEAR.ttf);
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(./fonts/Inter-Regular.woff);
+}
+@font-face {
+  font-family: 'Inter';
+  src: url(./fonts/Inter-Bold.woff);
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+  src: url(./fonts/Inter-Black.woff);
+}
