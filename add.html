@@ -12,8 +12,24 @@
       <a href="./index.html" class="link header__main">Главная</a>
       <a href="./photo.html" class="link header__photo">Фото</a>
       <a href="./friends.html" class="link header__photo">Друзья</a>
-      <a href="./add.html" class="link header__photo">Реклама</a>
+      <a href="./add.html" class="underscore header__photo">Реклама</a>
     </header>
-    <div class="page__container"></div>
+    <div class="page__container">
+      <section class="no-add">
+        <h1 class="no-add__text">Здесь нет рекламы, но есть кнопка!</h1>
+        <button class="no-add__button">Нажми меня!</button>
+      </section>
+      <div class="popup">
+        <div class="popup__container">
+          <p class="popup__info">Введи свое имя!</p>
+          <input class="popup__input" type="text" placeholder="Имя" />
+          <div class="popup__functions">
+            <button class="popup__save">Сохранить</button>
+            <button class="popup__exit">Выйти</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
