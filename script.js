@@ -16,7 +16,11 @@ function closePop() {
 closeBut.addEventListener('click', closePop)
 
 function saveInput() {
+    if (input.value.length === 0) {
+        alert(`Ты дурак? Сказали же введи что-нибудь прежде, чем сохранять!`)
+    } else {
     mainText.textContent = (`У нас нет рекламы, но у нас есть ${input.value}`)
     closePop();
+    }
 }
 saveBut.addEventListener('click', saveInput)
